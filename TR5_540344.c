@@ -38,18 +38,18 @@ void HEAP_add(HEAP* heap, void* newelem){
 
 void* HEAP_remove(HEAP* heap){
 	if(heap->P > 0){
-		void* aux = heap->elems[0];
-		heap->elems[0] = heap->elems[heap->P - 1];
+		void* aux = heap->elems[0]; // salva o primeiro elemento em um auxiliar
+		heap->elems[0] = heap->elems[heap->P - 1]; // remove o primeiro utilizando o segundo elemento
 		heap->P--;
-		int pos = 0;
-		int filho = 2*pos + 1;
-		while(filho < heap->P){
-			if(filho + 1 < heap->P){
-				if(heap->comparador(heap->elems[filho], heap->elems[filho + 1]) == -1){
-					filho++;
+		int pos = 0; // sobe a posição para zero
+		int filho = 2*pos + 1; // e a posição do filho para um
+		while(filho < heap->P){ // verifica se o elemento existe
+			if(filho + 1 < heap->P){ // checa se ainda existe filho na direita
+				if(heap->comparador(heap->elems[filho], heap->elems[filho + 1]) == -1){ // se existir faço a comparação se o primeiro e o segundo
+					filho++; // se o primeiro for menor que o segundo, soma-se mais um ao filho
 				}
 			}
-			if(heap->comparador(heap->elems[pos], heap->elems[filho]) == -1){
+			if(heap->comparador(heap->elems[pos], heap->elems[filho]) == -1){ // se for menor que o filho é trocado de local
 				void* aux2 = heap->elems[pos];
 				heap->elems[pos] = heap->elems[filho];
 				heap->elems[filho] = aux2;
