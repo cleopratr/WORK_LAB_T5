@@ -37,8 +37,7 @@ O código apresentado utiliza uma blibioteca nomeada **heap.h** encontrada no re
 
 # Funcionalidades do código
 
-- `HEAP_create`: Recebe um inteiro n e um ponteiro comparado tipo COMP retornandoo novo conjunto de elementos, esta função cria um uma heap mínima
-- `HEAP_add`: Recebe um ponteiro heap do tipo HEAP e um ponteiro tipo void chamado newelem, esta função adiciona um elemento a heap
-- `HEAP_remove`: Recebe como parâmetro um ponteiro heap retornando aux, essa função remove um elemento da estrutura
-
+- `HEAP_create`: Recebe um inteiro n e um ponteiro para uma função do tipo COMP. Esta função cria um heap ordenado com uma função comparador interna para ordenação.
+- `HEAP_add`: Recebe um ponteiro vetor HEAP e um ponteiro newelem do tipo void. Esta função adiciona um elemento ao heap.
+- `HEAP_remove`: Recebe como parâmetro um ponteiro HEAP, e retorna o primeiro elemento, removendo-o da heap.
 
