@@ -21,7 +21,7 @@ O código apresentado utiliza uma blibioteca nomeada **heap.h** encontrada no re
 
 > **Copie o comando abaixo:**
 > 
-> git clone https://github.com/cleopratr/WORK_LAB_T5
+> ```git clone https://github.com/cleopratr/WORK_LAB_T5```
 
 # Como compilar e executar
 
