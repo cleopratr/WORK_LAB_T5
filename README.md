@@ -27,13 +27,13 @@ O código apresentado utiliza uma blibioteca nomeada **heap.h** encontrada no re
 
 > **Após ascessar a pasta com o código no terminal, digite:**
 > 
-> cd WORK_LAB_T5
+> ```cd WORK_LAB_T5```
 >
-> gcc T5_540344 -o T5_540344
+> ```gcc TR5_540344.c main_heap.c -o T5_540344```
 > 
 > **Para executar seu código, ainda no terminal digite:** 
 > 
-> ./T5_540344
+> ```./T5_540344```
 
 # Funcionalidades do código
 
